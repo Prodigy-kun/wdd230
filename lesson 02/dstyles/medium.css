@@ -1,0 +1,13 @@
+@media only screen and (max-width: 62.5em) {
+    header {
+        line-height: 2em;
+        letter-spacing: 2px;
+        font-family: 'Kanit';
+        font-size: 1.2em;
+    }
+
+    #container {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+}

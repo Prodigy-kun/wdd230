@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Atomic+Age&family=Quicksand&family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Atomic+Age&family=Quicksand&family=Roboto+Mono&display=swap");
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 header {
@@ -15,10 +15,13 @@ header {
     box-shadow: 5px 10px 20px 15px #010220a1;
 }
 
-body {
-    background-color: #03b4cc;
-    margin: 0;
+#container {
+    width: 60%;
+    margin: 0 auto;
+}
 
+body {
+    margin: 0;
 }
 
 img {
@@ -28,21 +31,21 @@ img {
 h1 {
     display: inline-block;
     place-self: center center;
-    font-family: 'Atomic Age';
+    font-family: "Atomic Age";
     letter-spacing: 2px;
-
 }
 
 main {
     color: #010220;
     width: 92%;
     margin: 0 auto;
-    font-family: 'Abel';
+    font-family: "Abel";
     font-weight: 600;
+    line-height: 2em;
 }
 
 main h2 {
-    font-family: 'Atomic Age';
+    font-family: "Atomic Age";
     letter-spacing: 2px;
 }
 
