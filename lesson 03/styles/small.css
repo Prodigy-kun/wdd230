@@ -10,6 +10,7 @@ header {
     color: white;
     padding: 30px;
     box-shadow: 0 5px 10px 5px grey;
+    text-align: center;
 }
 
 nav {
@@ -72,10 +73,19 @@ section h3 {
     font-size: 1.2em;
 }
 
-.purpose {
+.purpose,
+ul {
     padding: 20px;
     line-height: 1.5em;
     font-size: 1.2em;
+}
+
+.purpose li {
+    list-style: circle;
+}
+
+ul {
+    list-style: none;
 }
 
 section p {
