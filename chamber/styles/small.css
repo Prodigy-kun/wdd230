@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1B1B3A;
+    color: white;
+    padding: .8em;
+
+}
+
+#header {
+    display: flex;
+    flex: 1;
+
+
+}
+
+#date {
+    text-align: center;
+    background-color: #ff3562;
+    margin: .4em;
+    padding: .2em;
+    font-family: 'Roboto Condensed';
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.hg1 {
+    display: flex;
+    align-items: center;
+}
+
+.hg1 section {
+    font-size: .7em;
+    margin-left: .8em;
+    font-family: 'Source Code Pro';
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.sm {
+    width: 7vw;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.nav-list {
+    padding: 0;
+}
+
+.nav-list li {
+    display: none;
+
+}
+
+#ham {
+    font-size: 4vw;
+    background: transparent;
+    margin-left: 0.8em;
+    color: white;
+}
+
+
+.logo {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    border: 2px dashed #ff3562;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    gap: .7em;
+}
+
+#container div {
+    background-color: #eeeeee;
+    height: 30vh;
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    font-family: 'Roboto Condensed';
+    letter-spacing: 1px;
+}
+
+#container div p {
+    padding: .8em;
+}
+
+
+.join {
+    display: none;
+}
+
+#container #spotlight {
+    height: 60vh;
+}
+
+#spotlight {
+    display: flex;
+    flex-direction: column;
+    padding-top: .6em;
+    padding-bottom: .6em;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #1B1B3A;
+    padding: 5px;
+    font-family: 'Roboto Condensed';
+    color: white;
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+footer img {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+}
+
+
+#bottom {
+    padding: 5px;
+}
