@@ -10,11 +10,11 @@ document.getElementById("date").textContent = today.toLocaleDateString("en-US", 
 
 // Last Modified
 const lastModified = document.lastModified;
-document.querySelector('span').textContent = lastModified
+document.querySelector('.modified').textContent = lastModified
 
 // Hamburger
 function toggleMenu() {
-    document.querySelector("nav-list").classList.toggle("open");
+    document.querySelector(".nav-list").classList.toggle("open");
     document.getElementById("ham").classList.toggle("open")
 }
 const x = document.getElementById("ham");
