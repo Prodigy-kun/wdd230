@@ -43,6 +43,10 @@
         grid-template-rows: repeat(3, 1fr);
     }
 
+    .hero a {
+        font-size: 1.5em;
+    }
+
     .event {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -57,6 +61,7 @@
     .weather {
         grid-column: 1/2;
         grid-row: 2/3;
+        width: 95%;
     }
 
     .join {
@@ -72,16 +77,30 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 .8em;
+        padding: .8em .8em;
     }
 
     .news {
         grid-column: 2/4;
         grid-row: 3/4;
+        width: 100%;
     }
 
     .snone {
         display: block;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        padding: .8em;
+        box-shadow: 0px 0px 10px 2px black;
+        line-height: 3em;
+    }
+
+    .snone img {
+        width: 40%;
+        margin: .8em auto;
     }
 
     .logo {
@@ -94,10 +113,10 @@
     }
 
     #ftcontainer img {
-        width: 10vw;
-        height: 10vw;
+        width: 8vw;
+        height: 8vw;
         border: 1.5px dashed #ff3562;
         margin-left: auto;
-
+        margin-right: .8em;
     }
 }

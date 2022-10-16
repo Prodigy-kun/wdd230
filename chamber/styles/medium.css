@@ -8,52 +8,83 @@
         grid-template-columns: 2fr 1fr;
     }
 
-    #container div {
+    /* #container div {
         font-size: 1.2em;
-    }
+    } */
 
     .hero {
         grid-column: 1/3;
-        background-color: #eee;
+    }
+
+    .hero h2 {
+        color: black;
+        font-size: 2.7em;
     }
 
     .news {
         grid-column: 1/3;
         grid-row: 2/3;
-        background-color: #eee;
+        background-color: #1B1B3A;
     }
 
     #spotlight {
         grid-column: 1/3;
         grid-row: 3/4;
         flex-direction: row;
+
     }
 
-    #container #spotlight {
+    .splsub {
+        line-height: 1.5em;
+    }
+
+    .splsub img,
+    .splsub p {
+        margin: .8em auto;
+    }
+
+
+    /* #container #spotlight {
         height: 30vh;
-    }
+    } */
 
-    #spotlight div {
+    /* #spotlight div {
         padding: 0 2em;
         height: 27.5vh;
         font-size: 1em;
 
-    }
+    } */
 
     .join {
         display: block;
         grid-column: 1/3;
         grid-row: 4/5;
-        background-color: #eee;
+        color: white;
+        text-align: center;
+        padding: 1.5em;
+        background-color: #1B1B3A;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .join a {
+        display: block;
+        background-color: #ff3562;
+        padding: .5em;
+        border-radius: .8em;
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
     }
 
     .event {
-        background-color: #eee;
+        background-color: #1B1B3A;
+        line-height: 5em;
 
     }
 
     .weather {
-        background-color: #eee;
+        background-color: #1B1B3A;
     }
 
     #ftcontainer {
@@ -62,13 +93,15 @@
         justify-content: center;
         align-items: center;
         font-size: 1.5vw;
+        padding: 2em;
+        font-size: 1em;
     }
 
     #ftcontainer img {
-        width: 13vw;
-        height: 13vw;
+        width: 11vw;
+        height: 11vw;
         margin-left: auto;
-
+        border: 1.5px dashed #ff3562;
     }
 
     .first {
