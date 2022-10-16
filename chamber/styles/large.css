@@ -43,8 +43,13 @@
         grid-template-rows: repeat(3, 1fr);
     }
 
+    .hero h2 {
+        color: white;
+    }
+
     .hero a {
         font-size: 1.5em;
+        right: 1.5em;
     }
 
     .event {
@@ -115,7 +120,6 @@
     #ftcontainer img {
         width: 8vw;
         height: 8vw;
-        border: 1.5px dashed #ff3562;
         margin-left: auto;
         margin-right: .8em;
     }
