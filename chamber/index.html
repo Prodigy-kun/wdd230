@@ -29,7 +29,7 @@
             <nav>
                 <button id="ham"><span>&#9776;</span><span>❌</span></button>
                 <ul class="nav-list">
-
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Discover</a></li>
                     <li><a href="#">Directory</a></li>
                     <li><a href="#">Join</a></li>
@@ -45,10 +45,15 @@
     <main>
         <div id="container">
             <div class="hero">
-                <img src="images/hall.jpg" alt="An image of mapo hall">
                 <h2>
                     Welcome to ANYA
                 </h2>
+                <picture>
+                    <source type="image/WebP" media="(min-width:1000px)" srcset="images/wdd230-org_large.webp">
+                    <source type="image/WebP" media="(min-width:600px)" srcset="images/wdd230-org _medium.webp">
+                    <source type="image/WebP" media="(min-width:300px)" srcset="images/wdd230-org_small.webp">
+                    <img src="images/hall.jpg" alt="responsive practice image">
+                </picture>
                 <a href="#">Join the chamber</a>
             </div>
             <div class="event">
@@ -66,13 +71,13 @@
                 </h2>
 
                 <img src="images/weather.png" alt="weather image">
-                <h2 class="degree">33°C</h2>
+                <h2 class="degree"><span class="temp">5</span>°C</h2>
                 <h3>Partly Cloudy</h3>
 
                 <div id="under">
                     <hr>
-                    <p>Wind Speed: <span>2.5 Km/h</span></p>
-                    <p>Wind Chill: <span> N/A</span></p>
+                    <p>Wind Speed: <span class="speed">10</span>Km/h</p>
+                    <p>Wind Chill: <span class="chill"> N/A</span></p>
                 </div>
             </div>
             <div class="news">
@@ -148,6 +153,7 @@
         <p class="mod">Last Modification: <span class="modified"></span></p>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

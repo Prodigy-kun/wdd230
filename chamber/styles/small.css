@@ -48,13 +48,8 @@ nav {
     /* display: none; */
     text-align: center;
     flex-direction: column;
-    /* background-color: #ff3562; */
     width: 100%;
-    /* width: 100%;
-    height: 100%; */
-    /* text-align: center; */
     margin-left: auto;
-    /* position: fixed; */
 }
 
 .sm {
@@ -65,12 +60,6 @@ nav {
 
 
 .nav-list {
-    /* background-color: black; */
-    /* z-index: 2;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    list-style: none; */
     display: none;
     list-style: none;
     padding: 0;
@@ -82,7 +71,6 @@ nav {
 
 .nav-list li a {
     color: white;
-    /* display: block; */
     text-decoration: none;
     border-right: 2px solid rgba(0, 0, 0, 0.445);
     padding: 1.2vw;
@@ -141,9 +129,9 @@ nav {
     letter-spacing: 1px;
 }
 
-#container div p {
-    padding: .8em;
-}
+/* div p {
+    padding: 5px;
+} */
 
 
 .join {
@@ -179,7 +167,7 @@ nav {
     flex-direction: column;
     width: 95%;
     margin: 0 auto;
-    padding: .8em;
+    padding: 5px;
     box-shadow: 0px 0px 10px 2px black;
     line-height: 3em;
 
@@ -189,18 +177,27 @@ nav {
     color: #ff3562;
 }
 
+.splsub h3 {
+    font-size: 1em;
+}
+
 .hero {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
     box-shadow: 0px 0px 10px 2px black;
 }
 
-.hero img {
+.hero picture {
     width: 100%;
     height: 100%;
     grid-column: 1/4;
     grid-row: 1/3;
+}
+
+.hero picture img {
+    width: 100%;
+    height: 100%;
 }
 
 .hero h2 {
@@ -210,8 +207,8 @@ nav {
     position: relative;
     top: .8em;
     left: .8em;
-    font-size: 2em;
-    color: white;
+    font-size: 5vw;
+    color: #ff3562;
 }
 
 .hero a {
@@ -220,10 +217,10 @@ nav {
     z-index: 1;
     background-color: #ff3562;
     place-self: center center;
-    padding: .4em;
+    padding: 4px;
     color: white;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 3vw;
     border-radius: .4em;
     border: 2px solid #1B1B3A;
     box-shadow: 2px 0 6px black;
@@ -233,25 +230,25 @@ nav {
     background-color: #1B1B3A;
     color: white;
     text-align: center;
-    padding: 2em;
+    padding: 10px;
     width: 95%;
     margin: 0 auto;
     box-shadow: 0px 0px 10px 4px grey;
 }
 
 .event h2 {
-    margin-top: .8em;
     color: gold;
 }
 
 .event p {
     line-height: 1.5em;
+    margin-top: 5px;
 }
 
 .weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: .8em;
+    padding: 10px;
     background-color: #1B1B3A;
     color: white;
     width: 70%;
@@ -263,7 +260,7 @@ nav {
     text-align: center;
     grid-column: 1/3;
     grid-row: 1/2;
-    font-size: 2em;
+    font-size: 3vw;
     color: #ff3562;
 
 }
@@ -282,7 +279,11 @@ nav {
     grid-column: 1/3;
     text-align: right;
     margin-right: .8em;
-    /* background-color: red; */
+}
+
+.chill,
+.speed {
+    margin-left: .8em;
 }
 
 #under {
