@@ -1,0 +1,21 @@
+body {
+    width: 40%;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 3px;
+    text-align: center;
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
