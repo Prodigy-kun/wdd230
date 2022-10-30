@@ -105,5 +105,18 @@
         gap: .4em;
     }
 
+    /* Medium css for discover page starts here */
+    .left.lazyload,
+    .right.lazyload {
+        border: 1px solid black;
+        box-shadow: 2px 0 5px 1px black;
+        background-color: #1B1B3A;
+        color: white;
+    }
+
+    .left.lazyload img,
+    .right.lazyload img {
+        width: 60%;
+    }
 
 }
