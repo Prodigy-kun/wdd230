@@ -19,7 +19,13 @@ function toggleMenu() {
 }
 const x = document.getElementById("ham");
 x.onclick = toggleMenu
-
+//Visit
+let day = today.getDay()
+const meet = document.querySelector('.meet')
+if (day === 1 || day === 2) {
+    meet.setAttribute('class', 'show')
+    meet.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'
+}
 // local storage
 const visit = document.querySelector('.visit')
 // const times = window.localStorage.setItem('visit', '0')

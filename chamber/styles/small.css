@@ -371,3 +371,10 @@ footer img {
     width: 95%;
     margin: 1em auto;
 }
+
+.show {
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Source Code Pro';
+    font-weight: bolder;
+}
