@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+table {
+    width: 70%;
+    margin: 35% auto 0 auto;
+    box-shadow: 0 0 20px 5px grey;
+}
+
+div {
+    margin-top: 5px;
+}
+
+td,
+th {
+
+    padding: 2vw;
+    font-size: 1.2em;
+}
+
+tr:first-child {
+    background-color: #03b4cc;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+tr:nth-child(2) {
+    background-color: #03b5cc3d;
+}
+
+td:nth-child(even):hover {
+    background-color: #03b4cc;
+}
+
+
+@media only screen and (min-width: 35em) {
+    table {
+        margin-top: 5%;
+        max-width: 960px;
+    }
+}
