@@ -406,6 +406,7 @@ footer img {
     display: flex;
     flex-direction: column;
     gap: 2vw;
+    font-family: 'Roboto Condensed';
 }
 .dform legend{
     color: #ff3562;
@@ -428,7 +429,7 @@ fieldset{
 }
 .membership input{
     display: inline;
-    width: 10%;
+    width: fit-content;
     height:1rem ;
 }
 .membership h2{
