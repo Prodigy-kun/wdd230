@@ -378,3 +378,88 @@ footer img {
     font-family: 'Source Code Pro';
     font-weight: bolder;
 }
+/* css for the join page starts here */
+.reqform{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+.reqform table {
+    border: 2px dashed #1B1B3A;
+    font-family: 'Roboto Condensed';
+    width:98%;
+    margin: 0 auto;
+}
+.reqform table td, .reqform table th{
+    border: 1px dashed #1B1B3A;
+}
+.reqform table tr:nth-child(1){
+    background-color: #ff3562;
+    color: white;
+    padding: 1.5vw;
+}
+.reqform table td, .reqform table th:nth-child(2){
+    padding: 2vw;
+}
+
+.dform{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.dform legend{
+    color: #ff3562;
+    font-size: .1.5rem;
+    border-radius: 10px;
+}
+fieldset{
+    border-radius: 10px;
+    width: 94%;
+    margin: auto;
+}
+.field label{
+    display: block;
+    margin: 2.5vw;
+}
+.field input{
+    display: block;
+    width: 70%;
+    height: 2.5rem;
+}
+.membership input{
+    display: inline;
+    width: 10%;
+    height:1rem ;
+}
+.membership h2{
+    font-family: 'Source Code Pro';
+    margin-left: 6%;
+    text-align: left;
+}
+textarea{
+    display: block;
+    width: 70%;
+}
+#submit{
+    width: 60%;
+    margin: .8em auto;
+    padding: 5px;
+    border: none;
+    background-color: #ff3562;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0 0 8px black;
+}
+input:required:invalid{
+    border-left: 10px solid #ff3562;
+}
+.thankyou div{
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 5em;
+    font-family: 'Source code pro';
+    font-size: .7em;
+    border-radius: 10px;
+}

@@ -60,3 +60,7 @@ if ('IntersectionObserver' in window) {
         loadImages(img)
     })
 }
+// stores the date the user loads the form
+document.querySelector('#submit').addEventListener('click', ()=>{
+    document.getElementById("hide").textContent = today.toLocaleDateString("en-US", options)
+})

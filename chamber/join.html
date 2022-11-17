@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Code+Pro:wght@500&display=swap">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Chamber Homepage</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="hg1">
+                <img class="logo" src="images/anyalogo.png" alt="Logo image">
+                <section>
+                    <h2>ANYA</h2>
+                    <h2>Chamber of Commerce</h2>
+                </section>
+            </div>
+            <a href="www.facebook.com"><img src="images/facebook.png" alt="facebook logo image" class="sm"></a>
+            <a href="www.twitter.com"><img src="images/twitter.png" alt="twitter logo image" class="sm"></a>
+            <nav>
+                <button id="ham"><span>&#9776;</span><span>❌</span></button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h2 id="date">date goes here</h2>
+        </div>
+
+    </header>
+    <div class="meet"></div>
+    <main class="reqform">
+        <form action="thankyou.html" method="get" class='dform'>
+            <fieldset class="field sets1">
+                <legend>About Me</legend>
+                <label>First Name* <input type="text" required name="fname" id="fname"></label>
+                <label>Last Name* <input type="text" required name="lname" id="lname"></label>
+                <label>Email*<input type="email" name="email" id="mail" placeholder="someone@gmail.com"></label>
+                <label>Phone no* <input type="tel" required name="phone" id="pnum"></label>
+            </fieldset>
+            <fieldset class="field sets2">
+                <legend>My Business</legend>
+                <label >Business Name* <input type="text" required name="bname" id="bname"></label>
+                <label>Business Title <input type="text" minlength="7"></label>
+                <div class="membership">
+                    <h2>Membership Level</h2>
+                    <label><input type="radio" required name="member" id="choice1">NP</label>
+                    <label><input type="radio" required name="member" id="choice2">Bronze Membership</label>
+                    <label><input type="radio" required name="member" id="choice3">Silver Membership</label>
+                    <label><input type="radio" required name="member" id="choice4">Gold Membership</label>
+                </div>
+                <label class="describe">Business Description <textarea name="message"  cols="30" rows="10"></textarea></label>
+                <input type="hidden" value="" id="hide">
+            </fieldset>
+            <button type="submit" id="submit">Submit My Application</button>
+        </form>
+        <table>
+            <tr>
+                <th colspan="3">Membership Level</th>
+            </tr>
+            <tr>
+                <th>Level</th>
+                <th>Price</th>
+                <th>Attribute</th>
+            </tr>
+            <tr>
+                <td>NP</td>
+                <td>Free</td>
+                <td>Membership is for non profit organizations and there is no fee.</td>
+            </tr>
+            <tr>
+                <td>Bronze</td>
+                <td>#8000</td>
+                <td>Access to Periodic training and tools,Mentorship, and councelling.</td>
+            </tr>
+            <tr>
+                <td>Silver</td>
+                <td>#40000</td>
+                <td>Bronze benefits + Affiliation with companies in business field + Grant and load opportunities</td>
+            </tr>
+            <tr>
+                <td>Gold</td>
+                <td>#200000</td>
+                <td>Silver benefits + Ability to buy shares with multiple company + Government Patnership</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <div id="ftcontainer">
+            <section class="first">
+                <img src="images/anyalogo.png" alt="logo image">
+                <div>
+                    <h3>ANYA Chamber of commerce</h3>
+                    <p><i>No2 Onitiju street, felele Ibadan.</i></p>
+                </div>
+            </section>
+            <section>
+                <p>Times Visited: <span class="visit"></span></p>
+
+                <p>info@anya.com</p>
+                <p>+2348107724442</p>
+                <p>⚓Location Map</p>
+            </section>
+        </div>
+        <hr>
+        <div id="bottom">
+            <p>@2022 ANYA Chamber |</p>
+            <h3>Omotayo Promise |</h3>
+            <p>230 Project |</p>
+        </div>
+        <p class="mod">Last Modification: <span class="modified"></span></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

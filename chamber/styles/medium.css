@@ -118,5 +118,13 @@
     .right.lazyload img {
         width: 60%;
     }
-
+    .reqform{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .reqform table{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 5vw;
+    }
 }
