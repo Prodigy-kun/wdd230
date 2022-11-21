@@ -127,4 +127,7 @@
         grid-row: 1/2;
         height: 5vw;
     }
+    .onlist span:nth-child(4), .listview a{
+        display: inline;
+    }
 }

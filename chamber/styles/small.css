@@ -100,11 +100,11 @@ nav {
     display: none;
 }
 
-#ham.open span:nth-child(1) {
+#ham.open span:nth-child(1),.viewchange span:nth-child(2),.viewchange.open span:nth-child(1) {
     display: none;
 }
 
-#ham.open span:nth-child(2) {
+#ham.open span:nth-child(2),.viewchange.open span:nth-child(2),.viewchange span:nth-child(1) {
     display: block;
 }
 
@@ -463,4 +463,89 @@ input:required:invalid{
     font-family: 'Source code pro';
     font-size: .7em;
     border-radius: 10px;
+}
+/* css for direcctory page starts here */
+.dircontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.gridit{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    row-gap: 20px;
+}
+.cardview{
+    /* display: flex; */
+   
+    font-family: 'Roboto Condensed';
+    font-size: .8rem;
+    line-height: 1.7rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.cardview img{
+    width: 14%;
+    border-radius: 50%;
+
+}
+.listview, .onlist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    background-color: #eee;
+    font-size: .7rem;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-family: 'Roboto Condensed';
+    gap: 10px;
+    place-items: center center;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+.forlist{
+    display: none;
+}
+.listview a{
+    width: 100%;
+    color: white;
+}
+.listview:nth-child(even) a,.cardview:nth-child(odd) a{
+    color: black;
+}
+.cardview:nth-child(even) a{
+    color: white;
+}
+.listview img,.listview a, .onlist span:nth-child(4),.onlist span:nth-child(1){
+    /* display: none; */
+    display: none;
+}
+.cardview:nth-child(even), .listview:nth-child(odd){
+    color: white;
+    background-color: #ff3561;
+}
+.listview:nth-child(even){
+    box-shadow: none;
+}
+.viewchange{
+    /* text-align: center; */
+    display: block;
+    padding: 5px;
+    width: 20%;
+    background-color: #ff3561;
+    font-size: 1.2rem;
+    color: white;
+    margin: 1.4rem auto;
+    border-radius: 8px;
+}
+.viewchange span:nth-child(1){
+    display: block;
+    text-align: center;
 }

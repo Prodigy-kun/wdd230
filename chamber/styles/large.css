@@ -190,4 +190,11 @@
         width: 70%;
         opacity: .7;
     }
+    .onlist span:nth-child(1){
+        display: inline;
+    }
+    .listview img{
+        display: inline;
+        width: 25%;
+    }
 }

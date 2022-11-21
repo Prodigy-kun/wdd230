@@ -61,6 +61,66 @@ if ('IntersectionObserver' in window) {
     })
 }
 // stores the date the user loads the form
-document.querySelector('#submit').addEventListener('click', ()=>{
-    document.getElementById("hide").textContent = today.toLocaleDateString("en-US", options)
+// document.querySelector('#submitBtn').addEventListener('click', ()=>{
+//     document.getElementById("hide").value = today.toLocaleDateString("en-US", options)
+// })
+// document.querySelector('#submitBtn').addEventListener('click', ()=>{
+//     document.querySelector('#hide').value = today.toLocaleDateString("en-US", options)
+// })
+// json for directory page
+const dircontain = document.querySelector('.dircontainer')
+async function getCompanies(uploader){
+    const request = await fetch('businessDir.json')
+    if(request.ok){
+        const response = await request.json()
+        // console.log(response)
+        const maindata =  response['business']
+        uploader(maindata)
+    }
+}
+
+const uploadData = function(data){
+data.forEach(subdata => {
+    //create blank boxes
+    const body = document.createElement('section')
+    const name = document.createElement('h2')
+    const address = document.createElement('h3')
+    const phone =  document.createElement('h3')
+    const logo = document.createElement('img')
+    const link = document.createElement('a')
+    //fil the blank boxes
+    // body.setAttribute('class', 'tochange')
+    body.classList.add('tochange', 'cardview')
+    // body.setAttribute('class', 'listview')
+    name.textContent = subdata.name
+    address.textContent = subdata.adresses
+    phone.textContent= subdata.phone
+    logo.setAttribute('src', subdata.image)
+    logo.setAttribute('alt', subdata.image)
+    link.setAttribute('href', subdata.url)
+    link.setAttribute('target', 'blank') 
+    link.textContent = subdata.url
+    //display content on website
+    body.appendChild(logo)
+    body.appendChild(name)
+    body.appendChild(address)
+    body.appendChild(phone)
+    body.appendChild(link)
+    dircontain.appendChild(body)
+})
+}
+getCompanies(uploadData)
+document.querySelector('.viewchange').addEventListener('click',()=>{
+    document.querySelector('.viewchange').classList.toggle('open')
+    document.querySelector('.dircontainer').classList.toggle('gridit')
+    document.querySelector('.onlist').classList.toggle('forlist')
+    const allList = document.querySelectorAll('.tochange')
+    allList.forEach(each=>{
+        each.classList.toggle('listview')
+        each.classList.toggle('cardview')
+    })
+
+    // document.querySelector('.tochange').classList.toggle('listview')
+
+
 })

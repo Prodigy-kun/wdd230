@@ -1,0 +1,76 @@
+{
+    "business":[
+        {
+            "name": "CocaCola",
+            "adresses": "Coca Cola Nigeria, Alexander Rd, Ikoyi 106104, Lagos",
+            "phone": "0800 262 2265" ,
+            "url": "www.coca-colacompany.com/",
+            "image":"images/cocacola.jpg",
+            "level": ""            
+        },
+        {
+            "name": "ASUS",
+            "adresses": "ASUS Computer International 800 Corporate Way Fremont, CA 94539",
+            "phone": "(510) 739-3777" ,
+            "url": "www.asus.com/ea/",
+            "image":"images/asus.png",
+            "level": ""
+        },
+        {
+            "name": "Adidas",
+            "adresses": "Adidas, L 68/59 Ikeja City Mall, Alausa, Lagos",
+            "phone": "0817 109 9452" ,
+            "url": "www.adidas.com/us",
+            "image":"images/adidas.png",
+            "level": ""
+        },
+        {
+            "name": "CodeExceptional",
+            "adresses": "60 N Circular Rd., London NW10 7PN, United Kingdom",
+            "phone": "+44 845 838 2067" ,
+            "url": "www.crunchbase.com/",
+            "image":"images/codeexceptional.png",
+            "level": ""
+        },
+        {
+            "name": "Samsung",
+            "adresses": "The Palms Shopping Mall, Ibadan",
+            "phone": " 0800 726 7864" ,
+            "url": "www.samsung.com/us/",
+            "image":"images/samsung-logo.png",
+            "level": ""
+        },
+        {
+            "name": "Zomato",
+            "adresses": "MKO Abiola Way",
+            "phone": " 0800 678 9877" ,
+            "url": "www.zomato.com/nigeria",
+            "image":"images/zomato.png",
+            "level": ""
+        },
+        {
+            "name": "Pepsi",
+            "adresses": " 5 kopek Rd, Mushin 102215, Lagos",
+            "phone": "0810 899 9108" ,
+            "url": "www.pepsi.com/",
+            "image":"images/pepsi-logo.png",
+            "level": ""
+        },
+        {
+            "name": "Nescafe",
+            "adresses": "22/24, Industrial Avenue, Ilupeju, P. M. B. 21164, Ikeja, Lagos.",
+            "phone": " 0701 184 7697" ,
+            "url": "www.nestle-cwa.com",
+            "image":"images/nescafe.png",
+            "level": ""
+        },
+        {
+            "name": "Lego",
+            "adresses": "Centro Lekki Mall",
+            "phone": " 0801 184 7697" ,
+            "url": "www.lego.com/en-us",
+            "image":"images/ledo.png",
+            "level": ""
+        }
+    ]
+}
