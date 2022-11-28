@@ -61,12 +61,12 @@ if ('IntersectionObserver' in window) {
     })
 }
 // stores the date the user loads the form
-document.querySelector('#submitBtn').addEventListener('click', ()=>{
-    document.getElementById("hide").value = today.toLocaleDateString("en-US", options)
-})
-document.querySelector('#submitBtn').addEventListener('click', ()=>{
-    document.querySelector('#hide').value = today.toLocaleDateString("en-US", options)
-})
+// document.querySelector('#submitBtn').addEventListener('click', ()=>{
+//     document.getElementById("hide").value = today.toLocaleDateString("en-US", options)
+// })
+// document.querySelector('#sbmitBtn').addEventListener('click', ()=>{
+//     document.querySelector('#hide').value = today.toLocaleDateString("en-US", options)
+// })
 // json for directory page
 const dircontain = document.querySelector('.dircontainer')
 async function getCompanies(uploader){
