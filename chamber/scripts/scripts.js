@@ -61,19 +61,18 @@ if ('IntersectionObserver' in window) {
     })
 }
 // stores the date the user loads the form
-// document.querySelector('#submitBtn').addEventListener('click', ()=>{
-//     document.getElementById("hide").value = today.toLocaleDateString("en-US", options)
-// })
-// document.querySelector('#submitBtn').addEventListener('click', ()=>{
-//     document.querySelector('#hide').value = today.toLocaleDateString("en-US", options)
-// })
+document.querySelector('#submitBtn').addEventListener('click', ()=>{
+    document.getElementById("hide").value = today.toLocaleDateString("en-US", options)
+})
+document.querySelector('#submitBtn').addEventListener('click', ()=>{
+    document.querySelector('#hide').value = today.toLocaleDateString("en-US", options)
+})
 // json for directory page
 const dircontain = document.querySelector('.dircontainer')
 async function getCompanies(uploader){
     const request = await fetch('businessDir.json')
     if(request.ok){
         const response = await request.json()
-        // console.log(response)
         const maindata =  response['business']
         uploader(maindata)
     }
@@ -119,8 +118,4 @@ document.querySelector('.viewchange').addEventListener('click',()=>{
         each.classList.toggle('listview')
         each.classList.toggle('cardview')
     })
-
-    // document.querySelector('.tochange').classList.toggle('listview')
-
-
 })
