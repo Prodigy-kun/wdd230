@@ -1,0 +1,12 @@
+.design{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    font-size: .8em;
+    border-radius: 20px;
+}
+span{
+    color: red;
+    font-size: 2em;
+}
