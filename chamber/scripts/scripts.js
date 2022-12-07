@@ -60,7 +60,9 @@ if ('IntersectionObserver' in window) {
         loadImages(img)
     })
 }
+
 // stores the date the user loads the form
+
 // document.querySelector('#submitBtn').addEventListener('click', ()=>{
 //     document.getElementById("hide").value = today.toLocaleDateString("en-US", options)
 // })
@@ -75,6 +77,14 @@ async function getCompanies(uploader){
         const response = await request.json()
         const maindata =  response['business']
         uploader(maindata)
+    }
+}
+async function spotlightP(getSpotlight){
+    const request = await fetch('businessDir.json')
+    if(request.ok){
+        const response = await request.json()
+        const maindata =  response['business']
+        getSpotlight(maindata)
     }
 }
 
@@ -109,6 +119,7 @@ data.forEach(subdata => {
 })
 }
 getCompanies(uploadData)
+spotlightP(getSpotlight)
 document.querySelector('.viewchange').addEventListener('click',()=>{
     document.querySelector('.viewchange').classList.toggle('open')
     document.querySelector('.dircontainer').classList.toggle('gridit')
@@ -119,3 +130,52 @@ document.querySelector('.viewchange').addEventListener('click',()=>{
         each.classList.toggle('cardview')
     })
 })
+function getSpotlight(data){
+    let splevel = Math.floor(Math.random() * (data.length))
+    if(data[splevel].level === 'gold' || data[splevel].level === 'silver'){
+        const spotlight = document.querySelector('#spotlight')
+        for(i=0; i<2; i++){
+            const placeHolder = document.createElement('div')
+            const nameHolder = document.createElement('h2')
+            const addressHolder = document.createElement('p')
+            const picHolder = document.createElement('img')
+            const linkHolder = document.createElement('a')
+            const hr = document.createElement('hr')
+            nameHolder.textContent = data[splevel].name
+            addressHolder.textContent = data[splevel].adresses
+            linkHolder.textContent = data[splevel].url
+            linkHolder.setAttribute('href',data[splevel].url)
+            picHolder.setAttribute("src", data[splevel].image)
+            placeHolder.setAttribute('class', 'splsub')
+            placeHolder.append(nameHolder)
+            
+            placeHolder.append(picHolder)
+            placeHolder.append(addressHolder)
+            placeHolder.append(hr)
+            placeHolder.append(linkHolder)
+            spotlight.append(placeHolder)
+            splevel = Math.floor(Math.random() * (data.length))
+        }
+        const placeHolder = document.createElement('div')
+            const nameHolder = document.createElement('h2')
+            const addressHolder = document.createElement('p')
+            const picHolder = document.createElement('img')
+            const linkHolder = document.createElement('a')
+            const hr = document.createElement('hr')
+            nameHolder.textContent = data[splevel].name
+            addressHolder.textContent = data[splevel].adresses
+            linkHolder.textContent = data[splevel].url
+            linkHolder.setAttribute('href',data[splevel].url)
+            picHolder.setAttribute("src", data[splevel].image)
+            placeHolder.setAttribute('class', 'snone')
+            placeHolder.append(nameHolder)
+            
+            placeHolder.append(picHolder)
+            
+            placeHolder.append(addressHolder)
+            placeHolder.append(hr)
+            placeHolder.append(linkHolder)
+            spotlight.append(placeHolder)
+            splevel = Math.floor(Math.random() * (data.length))
+    }
+}

@@ -6,7 +6,7 @@
             "phone": "0800 262 2265" ,
             "url": "www.coca-colacompany.com/",
             "image":"images/cocacola.jpg",
-            "level": ""            
+            "level": "silver"            
         },
         {
             "name": "ASUS",
@@ -14,7 +14,7 @@
             "phone": "(510) 739-3777" ,
             "url": "www.asus.com/ea/",
             "image":"images/asus.png",
-            "level": ""
+            "level": "silver"
         },
         {
             "name": "Adidas",
@@ -22,7 +22,7 @@
             "phone": "0817 109 9452" ,
             "url": "www.adidas.com/us",
             "image":"images/adidas.png",
-            "level": ""
+            "level": "gold"
         },
         {
             "name": "CodeExceptional",
@@ -30,7 +30,7 @@
             "phone": "+44 845 838 2067" ,
             "url": "www.crunchbase.com/",
             "image":"images/codeexceptional.png",
-            "level": ""
+            "level": "silver"
         },
         {
             "name": "Samsung",
@@ -38,7 +38,7 @@
             "phone": " 0800 726 7864" ,
             "url": "www.samsung.com/us/",
             "image":"images/samsung-logo.png",
-            "level": ""
+            "level": "gold"
         },
         {
             "name": "Zomato",
@@ -46,7 +46,7 @@
             "phone": " 0800 678 9877" ,
             "url": "www.zomato.com/nigeria",
             "image":"images/zomato.png",
-            "level": ""
+            "level": "gold"
         },
         {
             "name": "Pepsi",
@@ -54,7 +54,7 @@
             "phone": "0810 899 9108" ,
             "url": "www.pepsi.com/",
             "image":"images/pepsi-logo.png",
-            "level": ""
+            "level": "silver"
         },
         {
             "name": "Nescafe",
@@ -62,7 +62,7 @@
             "phone": " 0701 184 7697" ,
             "url": "www.nestle-cwa.com",
             "image":"images/nescafe.png",
-            "level": ""
+            "level": "silver"
         },
         {
             "name": "Lego",
@@ -70,7 +70,7 @@
             "phone": " 0801 184 7697" ,
             "url": "www.lego.com/en-us",
             "image":"images/ledo.png",
-            "level": ""
+            "level": "gold"
         }
     ]
 }

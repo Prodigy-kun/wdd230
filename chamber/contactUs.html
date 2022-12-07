@@ -44,60 +44,62 @@
 
     </header>
     <div class="meet"></div>
-    <main>
-
-        <div id="container">
-            <div class="hero">
-                <h2>
-                    Welcome to ANYA
-                </h2>
-                <picture>
-                    <source type="image/WebP" media="(min-width:1000px)" srcset="images/wdd230-org_large.webp">
-                    <source type="image/WebP" media="(min-width:600px)" srcset="images/wdd230-org _medium.webp">
-                    <source type="image/WebP" media="(min-width:300px)" srcset="images/wdd230-org_small.webp">
-                    <img src="images/images-0.jpg" alt="responsive practice image">
-                </picture>
-                <a href="join.html">Join the chamber</a>
-            </div>
-            <div class="event">
-                <h2>
-                    Gold Mine
-                </h2>
+    <main class="contact">
+        <div class="contactcanvas">
+            <div class="welcome">
+                <h2> Contact Us</h2>
                 <p>
-                    Join us for the grand launch of ANYA's Gold-Mine, MONDAY at 2pm.
-                    Exclusive to PREMIUM members ONLY.
+                    If you have any questions or queries a member of staff will always be happy to help. Feel free to contact us by telephone or email and we will be sure to get back to you as soon as possible.
                 </p>
             </div>
-            <div class="weather">
-                <h2>
-                    Weather
-                </h2>
-
-                <img src="" alt="weather image" class="liveweather">
-                <h2 class="degree"><span class="temp">0</span>°C</h2>
-                <h3>Partly Cloudy</h3>
-
-                <div id="under">
-                    <hr>
-                    <p>Wind Speed: <span class="speed">5</span>Km/h</p>
-                    <p>Wind Chill: <span class="chill"> N/A</span></p>
-                    <p>Provided by: <a href="openweathermap.org">openweathermap.org</a></p>
+            
+            <iframe id="mymap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.1456762716034!2d3.8850973142277487!3d7.337532315201367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398de088990241%3A0xce61b0abba70147e!2sEmmanuel%20Onitiju%20Cres%2C%20200263%2C%20Ibadan!5e0!3m2!1sen!2sng!4v1670220582975!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="thankyou.html" method="get" class='dform dcontact'>
+                <div class="othercontacts">
+                    <p>
+                        <hr>
+                        We'd love to
+                        hear from you
+                        <hr>
+                        
+                        Monday - Friday
+                        <br>
+                        9am to 5pm GMT+1
+                        <br>
+                        support@anyalogo.com
+                        <br>
+                        +234-810-772-4442
+                        <br>
+                        Emmanuel Onitiju Crescent 
+                        <br>
+                        Felele, Ibadan
+                        br
+                        Nigeria.
+                    </p>
                 </div>
-                
-            </div>
-            <div class="news">
-                <h2>
-                    News Release
-                </h2>
-                <p>The Central Bank of Nigeria (CBN) has announced plans to redesign, produce and circulate new local legal tender. The Naira has not been redesigned in the last 20 years. CBN sought and obtained the approval of President Muhammadu Buhari to redesign, produce, and circulate new series of N100, N200, N500, and N1,000 banknotes. This is effective December 15, 2022, while the old and new notes circulate together until January 31, 2023, when the old notes would cease to be legal tender in Nigeria.</p>
-            </div>
-            <div class="join">
-                <a href="join.html">Join Us</a>
-                <p>Discover how to join the chamber of commerce and how it will benefit your organization</p>
-            </div>
-            <div id="spotlight">
+                <div>
+                    <label>
+                        FirstName* <input type="text" name="fname" required>
+                    </label>
+                    <label>
+                        LastName* <input type="text" name="lname" required>
+                    </label>
+                    <label>
+                        Email* <input type="email" name="mail" placeholder="someone@gmail.com" required>
+                    </label>
+                    <textarea name="usermessage" id="info" cols="30" rows="10" placeholder="Briefly discuss with us"></textarea>
+                    <label class="newsletter"> <input type="checkbox" > Subscribe to our weekly newsletter for updates</label>
+                    
+                </div>
+
+                <button type="submit" id="sbmitBtn" class="sbmitBtn2">Send</button>
+            </form>
+            <div  class="about">
+                <img src="/wdd230/images/20220825_181830-min.jpg" alt="ilerioluwa">
+                <p>Meet <strong>Ilerioluwa Omotayo</strong> A junior front-end web developer in Brigham Young's University</p>
             </div>
         </div>
+        
     </main>
     <footer>
         <div id="ftcontainer">

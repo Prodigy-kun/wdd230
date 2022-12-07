@@ -107,13 +107,6 @@
     }
 
     /* Medium css for discover page starts here */
-    .left.lazyload,
-    .right.lazyload {
-        border: 1px solid black;
-        box-shadow: 2px 0 5px 1px black;
-        background-color: #1B1B3A;
-        color: white;
-    }
 
     .left.lazyload img,
     .right.lazyload img {
@@ -130,5 +123,16 @@
     }
     .onlist span:nth-child(4), .listview a{
         display: inline;
+    }
+    /* contact us page medium screen view starts here */
+    .contactcanvas{
+        width: 98%;
+        box-shadow: none;
+    }
+    .contactcanvas .welcome{
+        text-align: center;
+    }
+    .contactcanvas .welcome h2{
+        letter-spacing: 4px;
     }
 }
