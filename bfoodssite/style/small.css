@@ -239,11 +239,15 @@ iframe{
     width: 60%;
     margin: 0 auto;
 }
+.container2{
+    width: 90%;
+    margin: 1rem auto;
+}
 .container2 label{
     margin-left: 0.3rem;
 }
-form{
-    margin: 2rem 0;
+.drreq{
+    width: 90%;
 }
 fieldset{
     padding: .8em;
@@ -251,9 +255,18 @@ fieldset{
 .container2 input{
     display: block;
     margin: 0.3rem 0 1rem .7rem;
+   width: 60%;
+   padding: .5em;
+   border: none;
+   border-bottom: 2px solid black;
 }
 fieldset:nth-child(2){
     padding: 1em;
+    background-color: #152614;
+}
+.drreq select{
+    display: block;
+    margin: 1em 0;
 }
 .message{
     background-color: #2a7221;
@@ -264,4 +277,7 @@ fieldset:nth-child(2){
     padding: 1em;
     font-size: 1.2em;
     font-family: 'Roboto Mono', Abel , Quicksand, sans-serif;
+}
+#sendreq{
+    margin-top: 2em;
 }

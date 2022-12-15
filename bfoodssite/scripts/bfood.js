@@ -28,7 +28,6 @@ try {
     if (request.ok){
         response = await request.json()
         displayResults(response)
-        uploadoption(response)
     } else{
         throw Error(await request.text())
     }
@@ -106,68 +105,78 @@ const uploadOption = function(datalist){
         })
         
     })
-   
+    
     const sender = document.querySelector('#sendreq')
     sender.addEventListener('click', function(){
-    const div = document.createElement('div')
-    const name=document.createElement('h4')
-    const email=document.createElement('p')
-    const phone=document.createElement('p')
-    const fruit1=document.createElement('p')
-    const fruit2=document.createElement('p')
-    const fruit3=document.createElement('p')
-    const instruction=document.createElement('p')
-    const date=document.createElement('p')
-    const carbohydrates=document.createElement('p')
-    const protein=document.createElement('p')
-    const fat=document.createElement('p')
-    const sugar=document.createElement('p')
-    const calories=document.createElement('p')
-    name.textContent = `Name: ${document.querySelector('#fname').value}`
-    email.textContent = `Email: ${document.querySelector('#mail').value}`
-    phone.textContent = `Phone: ${document.querySelector('#phone').value}`
-    fruit1.textContent = `Fruit One: ${document.querySelector('#fruit1').value}`
-    fruit2.textContent = `Fruit Two: ${document.querySelector('#fruit2').value}`
-    fruit3.textContent = `Fruit Three: ${document.querySelector('#fruit3').value}`
-    instruction.textContent = `SPecial Instruction: ${document.querySelector('#request').value}`
-    date.textContent = `Order Date: ${today.toLocaleDateString("en-US", options)}`
-    let carb = 0
-    let prot = 0
-    let fatt = 0
-    let cal = 0
-    let sug = 0
-    const energyli = [document.querySelector('#fruit1').value, document.querySelector('#fruit2').value, document.querySelector('#fruit3').value]
-    energyli.forEach(energy=>{
-        for(let i = 0; i<datalist.length; i++){
-            if (datalist[i].name === energy){
-                carb += datalist[i].carbohydrates
-                prot += datalist[i].protein
-                fatt += datalist[i].fat
-                cal += datalist[i].calories
-                sug += datalist[i].sugar
+        const div = document.createElement('div')
+        const name=document.createElement('h4')
+        const email=document.createElement('p')
+        const phone=document.createElement('p')
+        const fruit1=document.createElement('p')
+        const fruit2=document.createElement('p')
+        const fruit3=document.createElement('p')
+        const instruction=document.createElement('p')
+        const date=document.createElement('p')
+        const carbohydrates=document.createElement('p')
+        const protein=document.createElement('p')
+        const fat=document.createElement('p')
+        const sugar=document.createElement('p')
+        const calories=document.createElement('p')
+        name.textContent = `Name: ${document.querySelector('#fname').value}`
+        email.textContent = `Email: ${document.querySelector('#mail').value}`
+        phone.textContent = `Phone: ${document.querySelector('#phone').value}`
+        fruit1.textContent = `Fruit One: ${document.querySelector('#fruit1').value}`
+        fruit2.textContent = `Fruit Two: ${document.querySelector('#fruit2').value}`
+        fruit3.textContent = `Fruit Three: ${document.querySelector('#fruit3').value}`
+        instruction.textContent = `Special Instruction: ${document.querySelector('#request').value}`
+        date.textContent = `Order Date: ${today.toLocaleDateString("en-US", options)}`
+        let carb = 0
+        let prot = 0
+        let fatt = 0
+        let cal = 0
+        let sug = 0
+        const energyli = [document.querySelector('#fruit1').value, document.querySelector('#fruit2').value, document.querySelector('#fruit3').value]
+        energyli.forEach(energy=>{
+            for(let i = 0; i<datalist.length; i++){
+                if (datalist[i].name === energy){
+                    carb += datalist[i].carbohydrates
+                    prot += datalist[i].protein
+                    fatt += datalist[i].fat
+                    cal += datalist[i].calories
+                    sug += datalist[i].sugar
+                }
             }
-        }
+        })
+        carbohydrates.textContent = `Total Carbohydrate: ${carb}`
+        protein.textContent = `Total Protein: ${prot}`
+        fat.textContent = `Total Fat: ${fatt}`
+        sugar.textContent = `Total Sugar: ${sug}`
+        calories.textContent = `Total: ${cal}`
+        div.setAttribute('class', 'message')
+        div.append(name)
+        div.append(email)
+        div.append(phone)
+        div.append(fruit1)
+        div.append(fruit2)
+        div.append(fruit3)
+        div.append(instruction)
+        div.append(carbohydrates)
+        div.append(protein)
+        div.append(fat)
+        div.append(sugar)
+        div.append(calories)
+        document.querySelector('.container2').append(div)
     })
-    carbohydrates.textContent = `Total Carbohydrate: ${carb}`
-    protein.textContent = `Total Protein: ${prot}`
-    fat.textContent = `Total Fat: ${fatt}`
-    sugar.textContent = `Total Sugar: ${sug}`
-    calories.textContent = `Total: ${cal}`
-    div.setAttribute('class', 'message')
-    div.append(name)
-    div.append(email)
-    div.append(phone)
-    div.append(fruit1)
-    div.append(fruit2)
-    div.append(fruit3)
-    div.append(instruction)
-    div.append(carbohydrates)
-    div.append(protein)
-    div.append(fat)
-    div.append(sugar)
-    div.append(calories)
-    document.querySelector('.container2').append(div)
-})
 
 }
-// console.log(document.querySelector('#name').value)
+const orders = document.querySelector('#order')
+window.localStorage.setItem('order', '0')
+console.log(orders)
+let count = window.localStorage.getItem('order')
+if(count === 0 ){
+    orders.textContent= 1
+}else{
+    count++
+    orders.textContent = count
+}
+
