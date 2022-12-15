@@ -16,7 +16,7 @@
     <header>
         <button class="ham">&#9776;</button>
         <a href="index.html"><img class="logo" src="images/logo.png" alt="logo image for bountiful foods"></a>
-        <button class="cto"><a href="#">Let's Mix!</a></button>
+        <button class="cto"><a href="fresh.html">Let's Mix!</a></button>
     </header>
     <nav class="shownot sidenav ">
         <button class="ham del">❌</button>
@@ -27,21 +27,23 @@
         </ul>
     </nav>
     <div class="container2">
-        <form class="drreq"
+        <form class="drreq">
             <fieldset>
+                <legend>Customer info</legend>
                 <label>First Name* <input type="text" id="fname" class="info" name="fname" required></label>
                 <label>Email* <input type="email" name="email" id="mail" required></label>
                 <label >Phone* <input type="tel" id="phone" name="phone" class="info" required></label>
             </fieldset>
             <fieldset>
+                <legend>Make Drink</legend>
                 <label>Select Fruit</label>
-                <select name="fruit" value="first fruit" id="fruit1">
+                <select name="fruit" id="fruit1">
                     <option value="First">First fruit</option>
                 </select>
-                <select name="fruit" value="second fruit" id="fruit2">
+                <select name="fruit" id="fruit2">
                     <option value="First">Second fruit</option>
                 </select>
-                <select name="fruit" value="Third fruit" id="fruit3">
+                <select name="fruit" id="fruit3">
                     <option value="First">Third fruit</option>
                 </select>
                 <textarea name="extra" id="request" cols="50" rows="10" placeholder="Input specific requiremnt that you might have"></textarea>
@@ -61,7 +63,7 @@
             </div>
             <div class="cite">
                 <p>Times Visited: <span class="visit"></span></p>
-                <p>Weather Source: <a href="#"></a></p>
+                <p>Weather Source: <a href="https://openweathermap.org/current"></a></p>
             </div>
             <div class="location">
                 <p>info@bountifulorganics.com</p>

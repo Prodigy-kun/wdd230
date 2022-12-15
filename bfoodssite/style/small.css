@@ -242,6 +242,8 @@ iframe{
 .container2{
     width: 90%;
     margin: 1rem auto;
+    font-family: 'Roboto Mono', Abel , Quicksand, sans-serif;
+    font-size: 1em;
 }
 .container2 label{
     margin-left: 0.3rem;
@@ -251,6 +253,8 @@ iframe{
 }
 fieldset{
     padding: .8em;
+    border-radius: 10px;
+    margin: 2em 0;
 }
 .container2 input{
     display: block;
@@ -259,21 +263,22 @@ fieldset{
    padding: .5em;
    border: none;
    border-bottom: 2px solid black;
+
 }
 fieldset:nth-child(2){
     padding: 1em;
-    background-color: #152614;
 }
 .drreq select{
     display: block;
     margin: 1em 0;
 }
 .message{
-    background-color: #2a7221;
+    /* background-color: #2a7221; */
+    font-size: .8em;
     text-align: center;
-    line-height: 2em;
+    line-height: 3em;
     margin: 2em 0;
-    color: white;
+
     padding: 1em;
     font-size: 1.2em;
     font-family: 'Roboto Mono', Abel , Quicksand, sans-serif;
