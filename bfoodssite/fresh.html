@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Final project for wdd230 2022 by Omotayo Promise">
+    <link rel="stylesheet" href="style/small.css">
+    <link rel="stylesheet" href="style/medium.css">
+    <link rel="stylesheet" href="style/large.css">
+    <title>Index page</title>
+</head>
+<body>
+    <header>
+        <button class="ham">&#9776;</button>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo image for bountiful foods"></a>
+        <button class="cto"><a href="#">Let's Mix!</a></button>
+    </header>
+    <nav class="shownot sidenav ">
+        <button class="ham del">❌</button>
+        <ul>
+            <li class="navli"><a href="index.html">Home</a></li>
+            <li class="navli"><a href="fresh.html">Fresh</a></li>
+            <li class="navli"><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="container2">
+        <form method="get" class="drreq"
+            <fieldset>
+                <label>First Name* <input type="text" id="fname" class="info" name="fname" required></label>
+                <label>Email* <input type="email" name="email" id="mail" required></label>
+                <label >Phone* <input type="tel" id="phone" name="phone" class="info" required></label>
+            </fieldset>
+            <fieldset>
+                <label>Select Fruit</label>
+                <select name="fruit" value="first fruit" id="fruit1">
+                    <option value="First">First fruit</option>
+                </select>
+                <select name="fruit" value="second fruit" id="fruit2">
+                    <option value="First">Second fruit</option>
+                </select>
+                <select name="fruit" value="Third fruit" id="fruit3">
+                    <option value="First">Third fruit</option>
+                </select>
+                <textarea name="extra" id="request" cols="50" rows="10" placeholder="Input specific requiremnt that you might have"></textarea>
+            </fieldset>
+            <button id="sendreq" class="cto low">Make your Fruit Drink</button>
+        </form>
+    </div>  
+    <div>
+        <footer class="foot">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <div class="fnav">
+                <ul>
+                    <li class="navli"><a href="index.html">Home</a></li>
+                    <li class="navli"><a href="fresh.html">Fresh</a></li>
+                    <li class="navli"><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="cite">
+                <p>Times Visited: <span class="visit"></span></p>
+                <p>Weather Source: <a href="#"></a></p>
+            </div>
+            <div class="location">
+                <p>info@bountifulorganics.com</p>
+                <p>+2348107724442</p>
+                <p><a href="https://goo.gl/maps/Euym8wBPeBzxfniYA" class="locate">⚓Location Map</a></p>
+            </div>
+            <div class="bottom">
+                <p>@2022 Bountiful Foods | Omotayo Promise |</p>
+                <p> wdd230 Project |</p>
+
+                <p class="mod">Last Modification: <span class="modified"></span></p>
+            </div>
+            
+        </footer>
+    </div>
+    <script src="scripts/bfood.js"></script>
+</body>
+</html>
